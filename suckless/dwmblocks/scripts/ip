@@ -1,0 +1,4 @@
+#!/bin/sh
+
+gip="$(curl ifconfig.me 2>/dev/null)" || exit
+echo "$gip"
