@@ -5,10 +5,12 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-//static const char *fonts[]          = { "Iosevka:size=10" };
-//static const char dmenufont[]       = "Iosevka:size=10";
-static const char *fonts[]			= { "CatseyeMicro:size=14" };
-static const char dmenufont[]		= "CatseyeMicro:size=14";
+//static const char *fonts[]	    = { "JetBrains Mono:size=9" };
+//static const char dmenufont[]	    = "JetBrains Mono:size=9";
+//static const char *fonts[]	    = {"Cozette:size=12"};
+//static const char dmenufont[]       = "Cozette:size=12";
+static const char *fonts[]	    = {"spectrum berry"};
+static const char dmenufont[]       = "spectrum berry";
 static const char col_gray1[]       = "#0c0c0c";
 static const char col_gray2[]       = "#333333";
 static const char col_gray3[]       = "#464646";
@@ -67,14 +69,13 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_accent, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *chromium[] = { "chromium", NULL};
-static const char *librewolf[] = { "librewolf", NULL };
+static const char *firefox[] = { "firefox", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,             		XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,			XK_w,	   spawn,          {.v = librewolf } },
+	{ MODKEY,			XK_w,	   spawn,          {.v = firefox } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },

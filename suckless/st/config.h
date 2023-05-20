@@ -5,8 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-//static char *font = "JetBrains Mono:pixelsize=12:antialias=true:autohint=true";
-static char *font = "IntelOne Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:pixelsize=12:antialias=true:autohint=true";
 //static char *font = "Mx437 DOS/V re. JPN24:pixelsize=14:antialias=true:autohint=true";
 //static char *font = "Hermit:pixelsize=12:antialias=true:autohint=true";
 //static char *font = "Victor Mono:pixelsize=12:antialias=true:autohint=true:style=Medium Oblique,Italic";
@@ -98,9 +97,7 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
-/*static const char *colorname[] = {
-	8 normal colors
+static const char *colorname[] = {
 	"#0c0c0c",
 	"#f14c4c",
 	"#15ac91",
@@ -110,7 +107,6 @@ unsigned int tabspaces = 8;
 	"#75d3ba",
 	"#6d6d6d",
 
-	8 bright colors
 	"#333333",
 	"#f14c4c",
 	"#15ac91",
@@ -122,37 +118,36 @@ unsigned int tabspaces = 8;
 
 	[255] = 0,
 
-	more colors can be added after 255 to use with DefaultXXs
-	"gray90", default foreground colour
-	"black", default background colour
-};*/
+	[256] = "#08070b",
+	[257] = "#ffffff",
+};
 
-static const char *colorname[] = {
+//static const char *colorname[] = {
 
 	/* 8 normal colors */
-	"#08070b", /* black   */
-	"#08070b", /* red     */
-	"#08070b", /* green   */
-	"#08070b", /* yellow  */
-  	"#08070b", /* blue    */
-  	"#08070b", /* magenta */
-  	"#08070b", /* cyan    */
-  	"#ffffff", /* white   */
+//	"#08070b", /* black   */
+//	"#08070b", /* red     */
+//	"#08070b", /* green   */
+//	"#08070b", /* yellow  */
+//  	"#08070b", /* blue    */
+//  	"#08070b", /* magenta */
+//  	"#08070b", /* cyan    */
+//  	"#ffffff", /* white   */
 
   	/* 8 bright colors */
-	"#08070b", /* black   */
-  	"#08070b", /* red     */
-  	"#08070b", /* green   */
-  	"#08070b", /* yellow  */
-  	"#08070b", /* blue    */
-  	"#08070b", /* magenta */
-  	"#08070b", /* cyan    */
-  	"#08070b", /* white   */
+//	"#08070b", /* black   */
+//  	"#08070b", /* red     */
+//  	"#08070b", /* green   */
+//  	"#08070b", /* yellow  */
+//  	"#08070b", /* blue    */
+//  	"#08070b", /* magenta */
+//  	"#08070b", /* cyan    */
+//  	"#08070b", /* white   */
 
 	/* special colors */
-	[256] = "#08070b", /* background */
-	[257] = "#ffffff", /* foreground */
-};
+//	[256] = "#08070b", /* background */
+//	[257] = "#ffffff", /* foreground */
+//};
 
 /*
  * Default colors (colorname index)
