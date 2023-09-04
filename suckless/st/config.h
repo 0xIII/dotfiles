@@ -5,11 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=12:antialias=true:autohint=true";
-//static char *font = "Mx437 DOS/V re. JPN24:pixelsize=14:antialias=true:autohint=true";
-//static char *font = "Hermit:pixelsize=12:antialias=true:autohint=true";
-//static char *font = "Victor Mono:pixelsize=12:antialias=true:autohint=true:style=Medium Oblique,Italic";
-//static char *font = "Utopia:pixelsize=12:antialias=true:autohint=true";
+//static char *font = "JetBrains Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Hurmit Nerd Font Mono:pixelsize=12:antialias=true:autohint=true";
+//static char *font = "3270 Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -99,22 +97,22 @@ unsigned int tabspaces = 8;
 
 static const char *colorname[] = {
 	"#0c0c0c",
-	"#f14c4c",
-	"#15ac91",
-	"#e5b95c",
-	"#4c9df3",
-	"#9a8af9",
-	"#75d3ba",
-	"#6d6d6d",
+	"#e31a1c",
+	"#31a354",
+	"#dca060",
+	"#3182bd",
+	"#756bb1",
+	"#80b1d3",
+	"#b7b8b9",
 
-	"#333333",
-	"#f14c4c",
-	"#15ac91",
-	"#e5b95c",
-	"#4c9df3",
-	"#e165d8",
-	"#75d3ba",
-	"#ffffff",
+	"#737475",
+	"#e31a1c",
+	"#31a354",
+	"#dca060",
+	"#3182bd",
+	"#756bb1",
+	"#80b1d3",
+	"#08070b",
 
 	[255] = 0,
 
